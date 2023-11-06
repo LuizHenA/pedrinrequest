@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu e Você</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="/src/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="center">
+            <button id="dice-button">Dice</button>
+            <button id="collection-button">Collection</button>
+        </div>
+        <section id="dice-section">
+            <h1>Veja uma frase aleatória</h1>
+            <p id="showValue" class="center">?</p>
+            <figure>
+                <img src="/src/img/dado/0.png" alt="dado" id="img">
+            </figure>
+            <div class="center"><button id="btn">Sortear</button></div>
+        </section>
+        <section id="collection-section">
+            <h1>Selecione uma frase</h1>
+            <div id="collection-div">
+                <button id="square-1" class="collection-btn">1</button>
+                <button id="square-2" class="collection-btn">2</button>
+                <button id="square-3" class="collection-btn">3</button>
+                <button id="square-4" class="collection-btn">4</button>
+                <button id="square-5" class="collection-btn">5</button>
+                <button id="square-6" class="collection-btn">6</button>
+            </div>
+        </section>
+        <div class="center">
+            <h2 id="paragraph"></h2>
+            <img id="p-img" src="" alt="">
+        </div>
+    </main>
+    <audio preLoad id="audio" src="/src/assets/dado-rolando.mp3" type="audio/mpeg"></audio>
+    <audio id="voice" src="/src/assets/audio.mp3"></audio>
+    <audio id="tiktok-music" src="/src/assets/tiktok-music.mp3"></audio>
+    <script>
+        const audio1 = document.getElementById('voice');
+        const audio2 = document.getElementById('tiktok-music');
+
+        audio1.loop = true;
+        audio2.loop = true;
+
+        audio1.play();
+        audio2.play();
+    </script>
+</body>
+
+</html>
